@@ -33,6 +33,22 @@ This repository contains three small implementations of the Digital Differential
   - Run: `python digitalDifeerentialAnalizer.py`
   - Notes: Coordinates are set in the driver code (`x0,y0` and `x1,y1`); change them to test different lines. The script plots the computed points with small markers.
 
+- `Breseham Line Algorthm.cpp` ✅ (C++)
+  - Purpose: Implements Bresenham's line drawing algorithm for efficient integer-based rasterization across all slopes. The program simulates a text-based pixel grid and marks plotted pixels (commonly with `B`).
+  - Build & run:
+    - Install a C++ compiler (g++ or MSVC).
+    - Compile: `g++ -o bresenham "Breseham Line Algorthm.cpp" -lm`
+    - Run: `./bresenham` (or `bresenham.exe` on Windows)
+  - Notes: Uses integer decision parameters (no floats), faster and more accurate for pixel-perfect lines compared to DDA. Modify start/end coordinates in `main` to test different slopes and directions.
+
+- `MIDPIONT.cpp` ✅ (C++)
+  - Purpose: Midpoint Circle Algorithm — draws circles using an efficient integer decision parameter and 8-way symmetry to plot octants simultaneously.
+  - Build & run:
+    - Install a C++ compiler (g++ or MSVC).
+    - Compile: `g++ -o midpoint MIDPIONT.cpp -lm`
+    - Run: `./midpoint` (or `midpoint.exe` on Windows)
+  - Notes: Set the center `(xc, yc)` and radius `r` in `main` to experiment with different circles. This implementation prints a text grid showing the circle points.
+
 ---
 
 ## Behavior / Implementation Notes 💡
