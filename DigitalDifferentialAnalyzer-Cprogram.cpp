@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 
-#define GRID_SIZE 16
+#define GRID_SIZE 30
 
 int main(){
 	
