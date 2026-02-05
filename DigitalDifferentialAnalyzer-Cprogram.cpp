@@ -18,13 +18,14 @@ int main(){
 	int px_Start = 1;
 	int py_Start = 2;
 	int px_End = 13;
-	int py_End = 19;
+	int py_End = 23;
 	
 	int dx = abs(px_Start - px_End);
 	int dy = abs(py_Start - py_End);
 	
 	int max;
 	if (dx > dy){
+		max = dx;
 		max = dx;
 	} else{
 		max = dy;
