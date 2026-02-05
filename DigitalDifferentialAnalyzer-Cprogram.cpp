@@ -26,7 +26,6 @@ int main(){
 	int max;
 	if (dx > dy){
 		max = dx;
-		max = dx;
 	} else{
 		max = dy;
 	}
